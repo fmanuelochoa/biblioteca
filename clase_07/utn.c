@@ -60,8 +60,6 @@ int utn_getName (char* msg, char* msgError,int minimo,int maximo,int reintentos,
 
 
 
-
-
 int isValidName (char* cadena)
 {
     int retorno = TRUE;  //para validar siempre empiezo en positivo para encontrar el error y cuando lo encuentro salgo con break
@@ -79,6 +77,38 @@ int isValidName (char* cadena)
     return retorno;
 
 }
+
+
+int printArray(char arrayStr [][50], int limite)//debug para probar
+{
+    int i;
+    for(i=0;i<limite;i++)
+    {
+        printf("\n%s",arrayStr[i]);
+    }
+    return 0;
+
+}
+
+int arrayLibre(char arrayStr[][50], int limite)
+{
+    int i;
+    for(i=0;i<limite;i++)
+    {
+
+        if(strcmp(arrayStr[i],"\0") == 0)
+        {
+            printf("%s",arrayStr[i]);
+            return i;
+            break;
+        }
+
+    }
+
+    return 0;
+
+}
+
 
 
 

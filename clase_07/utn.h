@@ -9,7 +9,6 @@ int utn_getString (char* msg, char* msgError,int minimo,int maximo,int reintento
 
 
 
-
 int utn_getName (char* msg, char* msgError,int minimo,int maximo,int reintentos,char* resultado);
 
 
@@ -17,6 +16,17 @@ int utn_getName (char* msg, char* msgError,int minimo,int maximo,int reintentos,
 
 
 int isValidName (char* cadena);
+
+
+
+
+int printArray(char arrayStr [][50], int limite);
+
+
+
+
+int arrayLibre(char arrayStr[][50], int limite);
+
 
 
 
